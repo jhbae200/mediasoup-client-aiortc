@@ -95,8 +95,9 @@ export async function getUserMedia(
 
 				audioPlayerOptions =
 				{
-					source : 'file',
-					file   : audio.file
+					source  : 'file',
+					file    : audio.file,
+					options : audio.options
 				};
 
 				break;
@@ -109,8 +110,9 @@ export async function getUserMedia(
 
 				audioPlayerOptions =
 				{
-					source : 'url',
-					file   : audio.url
+					source  : 'url',
+					file    : audio.url,
+					options : audio.options
 				};
 
 				break;
@@ -167,8 +169,9 @@ export async function getUserMedia(
 
 				videoPlayerOptions =
 				{
-					source : 'file',
-					file   : video.file
+					source  : 'file',
+					file    : video.file,
+					options : video.options
 				};
 
 				break;
@@ -181,8 +184,9 @@ export async function getUserMedia(
 
 				videoPlayerOptions =
 				{
-					source : 'url',
-					file   : video.url
+					source  : 'url',
+					file    : video.url,
+					options : video.options
 				};
 
 				break;
